@@ -8,8 +8,12 @@ public class ValueView {
         int myInt = 12;
         System.out.println(myInt);
         int myInt2;
-        myInt2 = 0;
+        myInt2 = classInt;
         System.out.println(myInt2);
+
+        myInt2 = classInt + 33;
+
+        classInt = classInt + 10;
 
         String myStr = "Мама"; // "", null
         System.out.println(myStr);
@@ -22,7 +26,7 @@ public class ValueView {
         classInt = 22;
         printValue();
 
-        classInt = 66;
+        classInt = 66 + classInt;
         System.out.println(classInt);
     }
 
