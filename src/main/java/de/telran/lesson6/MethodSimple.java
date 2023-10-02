@@ -26,10 +26,13 @@ public class MethodSimple {
         System.out.println("sum = "+sum);
 
         sum = getSum(getSum(a,b), 16); //getSum(44,16)
-        System.out.println("sum = "+sum);
+        System.out.println("sum ( getSum(getSum(a,b), 16)) = "+sum);
 
-        int myInt = inputInt();
-        System.out.println(myInt);
+        sum = getSum(a, b, 16);
+        System.out.println("sum ( getSum(a, b, 16)) = "+sum);
+
+//        int myInt = inputInt();
+//        System.out.println(myInt);
     }
 
     static void printSum(int arg1, int arg2) {
@@ -41,6 +44,10 @@ public class MethodSimple {
         int sum = arg1 + arg2;
 //        System.out.println(arg1+" + "+arg2+" = "+sum);
         return sum;  // return arg1 + arg2;
+    }
+
+    static int getSum(int arg1, int arg2, int arg3) {
+        return arg1 + arg2 + arg3;
     }
 
     static int inputInt() {
