@@ -15,5 +15,20 @@ public class ConstructorSimple {
         auto2.mileage = 5;
         auto2.run();
 
+        Auto auto3 = new Auto("Audi");
+        auto3.run();
+
+        Auto auto4 = new Auto("Porsche", 2020);
+        auto4.mileage = 3;
+        auto4.run();
+
+        Auto auto5 = new Auto("Lada", 2023, 5);
+        auto5.run();
+
+        Auto auto6 = new Auto();
+        auto6.run();
+
+
+
     }
 }
