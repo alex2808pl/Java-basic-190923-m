@@ -37,6 +37,7 @@ public class SimpleFor {
     private static void printIntervalFor(int myInt) {
         //for
         for (int counter = 1; counter <= myInt; counter++) {
+            if(counter==5) continue; // 5-ка на экран не напечатается
             System.out.println(counter);
         }
     }
