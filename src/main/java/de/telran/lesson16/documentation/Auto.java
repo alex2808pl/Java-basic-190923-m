@@ -60,4 +60,12 @@ public class Auto {
             return power * maxSpeed * 1.5;
         }
     }
+
+    @Override
+    public String toString() {
+        return "Auto{" +
+                "color='" + color + '\'' +
+                ", model='" + model + '\'' +
+                '}';
+    }
 }

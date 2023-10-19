@@ -2,7 +2,7 @@ package de.telran.lesson7;
 
 public class Auto {
     String model;
-    int year;
+    public int year;
     int mileage;
     String color;
 
@@ -21,7 +21,7 @@ public class Auto {
         year = argYear;
     }
 
-    Auto(String model, int year, int mileage) {
+    public Auto(String model, int year, int mileage) {
         this.model = model;
         this.year = year;
         this.mileage = mileage;
@@ -33,5 +33,14 @@ public class Auto {
 
     void turn() {
         System.out.println(model+" год выпуска "+year+" с пробегом "+mileage+" ПОВЕРНУЛ!");
+    }
+
+    @Override
+    public String toString() {
+        return "Auto{" +
+                "model='" + model + '\'' +
+                ", year=" + year +
+                ", mileage=" + mileage +
+                '}';
     }
 }
