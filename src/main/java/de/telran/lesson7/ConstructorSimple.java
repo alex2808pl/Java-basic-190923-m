@@ -1,5 +1,8 @@
 package de.telran.lesson7;
 
+import java.util.Collections;
+import java.util.Comparator;
+
 public class ConstructorSimple {
     public static void main(String[] args) {
         Auto auto1 = new Auto();

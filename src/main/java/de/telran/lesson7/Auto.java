@@ -1,5 +1,8 @@
 package de.telran.lesson7;
 
+import jdk.nashorn.internal.objects.annotations.Getter;
+
+
 public class Auto {
     String model;
     public int year;
@@ -42,5 +45,9 @@ public class Auto {
                 ", year=" + year +
                 ", mileage=" + mileage +
                 '}';
+    }
+
+    public String getColor() {
+        return color;
     }
 }
