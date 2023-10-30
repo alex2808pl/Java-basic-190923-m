@@ -1,4 +1,4 @@
-package de.telran.lesson22;
+package de.telran.lesson22.task1;
 
 import java.util.Scanner;
 
