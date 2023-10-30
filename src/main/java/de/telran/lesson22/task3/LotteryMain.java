@@ -16,11 +16,9 @@ public class LotteryMain {
         int[] lotteryNumbers = lottery.getWinnerNumbers();
         System.out.println(Arrays.toString(lotteryNumbers));
 
+        int countWinnerNumber = Utils.compareWinnerNumbers(lotteryNumbers, userNumbers);
+        System.out.println("Количество совпавших номеров - "+countWinnerNumber);
 
-//        }
-//        System.out.println("Счастливые номера: "+lucky1+" "+lucky2+" "+lucky3+" "+lucky4+" "+lucky5);
-//        System.out.println();
-//        System.out.println("Номера пользов-ля: "+userNum1+" "+userNum2+" "+userNum3+" "+userNum4+" "+userNum5);
     }
 }
 

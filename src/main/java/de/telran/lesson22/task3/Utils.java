@@ -15,4 +15,17 @@ public class Utils {
         }
         return arr;
     }
+
+    public static int compareWinnerNumbers(int[] lotteryNumbers, int[] userNumbers) {
+        int count = 0;
+        for (int userNumber : userNumbers) {
+            for(int lotteryNumber : lotteryNumbers) {
+                if(userNumber == lotteryNumber) {
+                    count++;
+                    break;
+                }
+            }
+        }
+        return count;
+    }
 }

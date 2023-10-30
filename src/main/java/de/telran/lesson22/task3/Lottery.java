@@ -6,7 +6,7 @@ public class Lottery {
     private int[] winnerNumbers = new int[COUNT_SET_SIZE];
     private int lucky;
     private int luckyCount;
-    private int range = 50;
+    private int range = 10;
 
     public void runLottery() {
         luckyCount = 1;
